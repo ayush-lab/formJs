@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Contact us Form | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+    <div class="container">
+        <div class="text">Responsive Contact us Form</div>
+        <form action="#"   >
+           <div class="form-row">
+              <div class="input-data">
+                 <input id="name" type="text" required onkeyup="validateName()">
+                 <div class="underline"></div>
+                 <label for="">Name<span class="redText">*</span></label>
+                 <div class="errors"></div>
+              </div>
+              <div class="input-data">
+                 <input type="text" id="company" required onkeyup="validateCompany()">
+                 <div class="underline"></div>
+                 <label for="">Company<span class="redText">*</span></label>
+                 <div class="errors"></div>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input id="email" type="email" required onkeyup="validateEmail()">
+                 <div class="underline"></div>
+                 <label for="" id="email_label">Email<span class="redText">*</span></label>
+                 <div class="errors"></div>
+
+              </div>
+              <div class="input-data">
+                 <input type="text"  id="phone"  required onkeyup="validatePhone()">
+                 <div class="underline"></div>
+                 <label for="">Phone<span class="redText">*</span></label>
+                 <div class="errors"></div>
+              </div>
+              <br class="break"/>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <select>
+                     <!-- <option>Category<span class="redText">*</span></option> -->
+                     <!-- <option hidden disabled selected value></option>                      -->
+                     <option>Option 1</option>
+                     <option>Option 2</option>
+                     <option>Option 3</option>
+                 </select>
+                 <div class="underline"></div>
+                 <label class="upwards" for="">Category<span class="redText">*</span></label>
+                 <div class="errors"></div>
+
+              </div>
+              <div class="input-data">
+              </div>
+           </div>
+           
+           <div class="form-row">
+              <div class="input-data textarea">
+                  <!-- <br/> -->
+
+                 <textarea rows="8" cols="80"  id="textArea" required onkeyup="validateTextArea()"></textarea>
+                 <div class="underline"></div>
+                 <label for="">Write your message<span class="redText">*</span></label>
+                 <div class="errors"></div>
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="submit" value="submit">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </form>
+     </div>
+   </body>
+
+   <script src="validate.js"></script>
+</html>
